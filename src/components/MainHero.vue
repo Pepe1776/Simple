@@ -70,8 +70,8 @@ Hire Me
     }
     .call {
         position: absolute;
-        top: 88%;
-        left: 50%;
+        top: 78%;
+        left: 40%;
         transform: translate(-50%, -50%);
         z-index: 2;
         opacity: 0.8;
@@ -87,15 +87,20 @@ Hire Me
         font-family: 'Rubik Moonrocks', cursive;
     }
         .pulse {
-            animation: pulse 5s infinite;
+            animation-name: stretch;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
             cursor: pointer;
             color: rgba(51, 255, 0, 0.666);
            
         }
     
-        .pulse:hover {
-            animation: none;
-        }
+       
     
     
         @keyframes pulse {
@@ -103,19 +108,26 @@ Hire Me
                     color: rgba(51, 255, 0, 0);
                 }
             
-                50% {
-                    color: rgba(51, 255, 0, 0.256);
-                }
-            
                 100% {
-                    -color: rgba(51, 255, 0, 0.666);
+                    color: rgba(51, 255, 0, 0.666);
                 }
-                50% {
-                    color: rgba(51, 255, 0, 0.256);
-                }
-                0% {
-                    color: rgba(51, 255, 0, 0);
-                }
+               
         }
+                @keyframes stretch {
+                    0% {
+                        transform: scale(.6);
+                        color: rgba(51, 255, 0, 0);;
+                        border-radius: 100%;
+                    }
+        
+                    50% {
+                        color: rgba(51, 255, 0, 0.319);
+                    }
+        
+                    100% {
+                        transform: scale(1);
+                        color: rgba(51, 255, 0, 0.666);
+                    }
+                }
 
 </style>

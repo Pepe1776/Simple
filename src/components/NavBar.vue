@@ -25,7 +25,7 @@
     }
     .btn {
         font-family: 'Rubik Moonrocks', cursive;
-        color: rgba(51, 255, 0, 0.666);
+        color: rgba(51, 255, 0, 0.453);
         margin-top: 5%;
         margin-right: 10rem;
         height: 100px;
