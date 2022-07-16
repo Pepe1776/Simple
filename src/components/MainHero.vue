@@ -1,16 +1,17 @@
 <template>
     <div>
         <Transition name="fade">
-            <img src="../assets/hero.jpeg" alt="hero" />
+            <img class="pulse2" src="../assets/hero.jpeg" alt="hero" />
         </Transition>
         <div class="black"></div>
+        <div class="black0"></div>
         <Transition name="fade">
             <img class="float" src="../assets/121212.png" alt="hero" />
         </Transition>
         <router-link to="/">
             <img src="../assets/Satoshi-logo.png" alt="Satoshi logo" class="logo" />
         </router-link>
-        <router-link class="call pulse">
+        <router-link id="call" class="call">
 Hire Me
         </router-link>
     </div>
@@ -35,7 +36,9 @@ Hire Me
         height: 100vh;
         position: absolute;
         inset: 0;
-        opacity: 0.1;
+        opacity: 0.05;
+        z-index: 3;
+        curser: none;
     }
     .black {
         background-color: #000000;
@@ -46,15 +49,30 @@ Hire Me
         top: 100vh;
         opacity: 0.5;
     }
+    .black0 {
+        background-color: #000000;
+        width: 100vw;
+        height: 400vh;
+        position: absolute;
+        inset: 0;
+        top: 0;
+
+    }
     .logo {
         width: 300px;
         height: auto;
         position: absolute;
         top: 3%;
         left: 3%;
-        z-index: 2;
+        z-index: 5;
         opacity: 0.8;
         cursor: crosshair;
+    }
+    .logo:hover {
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+        transform: scale(1.1);
+       
     }
     .float {
         display: none;
@@ -68,16 +86,14 @@ Hire Me
         height: auto;
         border-radius: 50%;
     }
-    .call {
+    #call {
         position: absolute;
         top: 78%;
         left: 40%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        opacity: 0.8;
-        cursor: crosshair;
+        z-index: 5;
+        opacity: 0.6;
         font-size: 9rem;
-        color: rgba(51, 255, 0, 0.666);
+        color: rgba(51, 255, 0, 0.459);
         width: auto;
         height: 300px;
         text-align: center;
@@ -85,7 +101,13 @@ Hire Me
         justify-content: center;
         align-items: center;
         font-family: 'Rubik Moonrocks', cursive;
+        transition: all 0.5s ease-in-out;
     }
+         #call:hover {
+             opacity: 1;
+             transform: scale(1.1);
+             color: rgb(51, 255, 0);
+         }
         .pulse {
             animation-name: stretch;
                 animation-duration: 1.5s;
@@ -96,20 +118,46 @@ Hire Me
                 animation-fill-mode: none;
                 animation-play-state: running;
             cursor: pointer;
+            color: rgba(51, 255, 0, 0.666);}
+        .pulse2 {
+            animation-name: stretch;
+                animation-duration: 5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            cursor: pointer;
             color: rgba(51, 255, 0, 0.666);
            
         }
-    
+
+   
        
     
     
         @keyframes pulse {
             0% {
                     color: rgba(51, 255, 0, 0);
+                    opacity: 0;
                 }
             
                 100% {
                     color: rgba(51, 255, 0, 0.666);
+                    opacity: 1;
+                }
+               
+        }
+        @keyframes pulse2 {
+            0% {
+                    
+                    opacity: 0;
+                }
+            
+                100% {
+                 
+                    opacity: 1;
                 }
                
         }

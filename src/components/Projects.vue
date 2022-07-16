@@ -79,7 +79,9 @@ const Icon4 = ref(false);
     }
 
     .icon:hover {
-        transition: all 0.5s ease-in-out;;        
+        transition: all 0.5s ease-in-out;        
         opacity: 1;
+        transform: scale(1.1);
+        
     }
 </style>
