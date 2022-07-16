@@ -9,7 +9,7 @@
             <img class="float" src="../assets/121212.png" alt="hero" />
         </Transition>
         <router-link to="/">
-            <img src="../assets/Satoshi-logo.png" alt="Satoshi logo" class="logo" />
+            <img src="../assets/Satoshi-logo-300.png" alt="Satoshi logo" class="logo" />
         </router-link>
         <router-link id="call" class="call">
 Hire Me
@@ -61,11 +61,11 @@ Hire Me
     .logo {
         width: 300px;
         height: auto;
-        position: absolute;
+        position: fixed;
         top: 3%;
         left: 3%;
         z-index: 5;
-        opacity: 0.8;
+        opacity: 0.6;
         cursor: crosshair;
     }
     .logo:hover {
@@ -88,7 +88,7 @@ Hire Me
     }
     #call {
         position: absolute;
-        top: 78%;
+        top: 378%;
         left: 40%;
         z-index: 5;
         opacity: 0.6;
@@ -111,7 +111,7 @@ Hire Me
         .pulse {
             animation-name: stretch;
                 animation-duration: 1.5s;
-                animation-timing-function: ease-out;
+                animation-timing-function: ease-in-out;
                 animation-delay: 0;
                 animation-direction: alternate;
                 animation-iteration-count: infinite;
@@ -121,7 +121,7 @@ Hire Me
             color: rgba(51, 255, 0, 0.666);}
         .pulse2 {
             animation-name: stretch;
-                animation-duration: 5s;
+                animation-duration: 15s;
                 animation-timing-function: ease-out;
                 animation-delay: 0;
                 animation-direction: alternate;
