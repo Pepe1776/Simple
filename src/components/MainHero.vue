@@ -122,7 +122,7 @@ function Play() {
             cursor: crosshair;
             z-index: 7;
             padding: 50px;
-            left:35%;
+            left:30%;
             top: 80%;
             border-radius: 10px;
             display: flex;
