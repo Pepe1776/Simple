@@ -1,16 +1,17 @@
 <template>
-    <div class="navbar">
+    <nav class="navbar">
         <router-link class="btn projects">Projects</router-link>
         <router-link class="btn design">Designs</router-link>
         <router-link class="btn contact">Contact Me</router-link>
         
-    </div>
+    </nav>
 </template>
 <script lang="ts" setup>
 
 </script>
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100;1,400;1,900&display=swap');
     .navbar {
         width: 100%;
         position: absolute;
@@ -24,8 +25,9 @@
         
     }
     .btn {
-        font-family: 'Rubik Moonrocks', cursive;
-        color: rgba(51, 255, 0, 0.453);
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 900;
+        color: rgba(0, 204, 255, 0.607);
         margin-top: 3%;
         margin-right: 10rem;
         height: 100px;
@@ -43,8 +45,8 @@
         transition: all 0.5s ease-in-out;
         opacity: 1;
         transform: scale(1.1);
-        color: rgba(51, 255, 0, 0.544);
-        box-shadow: 0 0 10px #2dff03;
+        color: rgba(0, 204, 255, 0.607);
+        box-shadow: 0 0 10px rgba(0, 204, 255, 0.607);
     }
     router-link {
         cursor: crosshair;

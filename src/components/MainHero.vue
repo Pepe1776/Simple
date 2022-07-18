@@ -9,7 +9,7 @@
             <img class="float" src="../assets/121212.png" alt="hero" />
         </Transition> 
             <button v-if="action2" class="btn2" @click="Play(), action2 = !action2">Jump into the future!</button>
-        <Transition name="slide-fade" appear>
+        <Transition name="fade" appear>
             <p id="action1" class="action1 pulse" v-if="action1">Simulation is rendering .....</p>
         </Transition>
         <Transition name="fade" appear>
@@ -22,7 +22,7 @@
             <p id="action1" class="action2" v-if="action4">We are a team of experts in the field of digitalization</p>
         </Transition>
         <router-link to="/">
-            <img src="../assets/Satoshi-logo-300.png" alt="Satoshi logo" class="logo" />
+            <img src="../assets/Satoshi-logo-bw.png" alt="Satoshi logo" class="logo" />
         </router-link>
         <router-link id="call" class="call">
             Hire Me
@@ -59,7 +59,7 @@ function Play() {
     }, 7000);
     setTimeout(() => {
         action5.value = false;
-    }, 15000);
+    }, 17000);
 
     setTimeout(() => {
         action3.value = false;
@@ -74,10 +74,11 @@ function Play() {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100;1,400;1,900&display=swap');
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 5s ease;
+    transition: opacity 0.7s ease;
 }
 
 .fade-enter-from,
@@ -109,11 +110,12 @@ function Play() {
         curser: none;
     }
     .img-action {
-        opacity: 0.2;
+        opacity: 0.1;
     }
         .btn2 {
-            font-family: 'Rubik Moonrocks', cursive;
-            color: rgba(51, 255, 0, 0.453);
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 900;
+            color: rgba(0, 204, 255, 0.607);
             height: 200px;
             width: auto;
             font-size: 5rem;
@@ -127,7 +129,7 @@ function Play() {
             align-items: center;
             position: absolute;
             background: transparent;
-            border: 1px solid rgba(51, 255, 0, 0.453);
+            border: 1px solid rgba(0, 204, 255, 0.607);
         }
     .black {
         background-color: #000000;
@@ -182,7 +184,7 @@ function Play() {
         z-index: 5;
         opacity: 0.6;
         font-size: 9rem;
-        color: rgba(51, 255, 0, 0.459);
+        color: rgba(0, 204, 255, 0.607);
         width: auto;
         height: 300px;
         text-align: center;
@@ -195,7 +197,7 @@ function Play() {
          #call:hover {
              opacity: 1;
              transform: scale(1.1);
-             color: rgb(51, 255, 0);
+             color: rgba(0, 204, 255, 0.607);
          }
          .action1 {
              position: absolute;
@@ -207,14 +209,15 @@ function Play() {
              width: 50%;
              height: auto;
              font-size: 5rem;
-             color: rgba(51, 255, 0, 0.459);
-             font-family: 'Rubik Moonrocks', cursive;
+             color: rgba(0, 204, 255, 0.607);
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 900;
              transition: all 0.5s ease-in-out;
              
          }
          .action2 {
              position: absolute;
-             top: 70%;
+             top: 50%;
              left: 50%;
              transform: translate(-50%, -50%);
              z-index: 3;
@@ -223,12 +226,13 @@ function Play() {
              height: 100%;
              line-height: normal;
              font-size: 7rem;
-             color: rgba(51, 255, 0, 0.459);
-             font-family: 'Rubik Moonrocks', cursive;
+             color: rgba(0, 204, 255, 0.607);
+             font-family: 'Noto Sans', sans-serif;
+             font-weight: 900;
              justify-content: center;
-                align-items: center;
-                display: flex;
-                text-shadow: #000000 0px 0px 20px;
+             align-items: center;
+             display: flex;
+             text-shadow: #000000 0px 0px 20px;
              transition: all 0.5s ease-in-out;
          }
         .pulse {
@@ -241,7 +245,7 @@ function Play() {
                 animation-fill-mode: none;
                 animation-play-state: running;
             cursor: pointer;
-            color: rgba(51, 255, 0, 0.666);}
+            color: rgba(0, 204, 255, 0.607);}
         .pulse2 {
             animation-name: stretch;
                 animation-duration: 15s;
@@ -252,7 +256,7 @@ function Play() {
                 animation-fill-mode: none;
                 animation-play-state: running;
             cursor: pointer;
-            color: rgba(51, 255, 0, 0.666);
+            color: rgba(0, 204, 255, 0.607);
            
         }
 
@@ -267,7 +271,7 @@ function Play() {
                 }
             
                 100% {
-                    color: rgba(51, 255, 0, 0.666);
+                    color: rgba(0, 204, 255, 0.607);
                     opacity: 1;
                 }
                
@@ -292,12 +296,12 @@ function Play() {
                     }
         
                     50% {
-                        color: rgba(51, 255, 0, 0.319);
+                        color: rgba(6, 142, 176, 0.607);
                     }
         
                     100% {
                         transform: scale(1);
-                        color: rgba(51, 255, 0, 0.666);
+                        color: rgba(0, 204, 255, 0.607);
                     }
                 }
 
