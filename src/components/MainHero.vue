@@ -105,12 +105,12 @@ function Play() {
         height: 100vh;
         position: absolute;
         inset: 0;
-        opacity: 0.05;
+        opacity: 0.2;
         z-index: 3;
         curser: none;
     }
     .img-action {
-        opacity: 0.1;
+        opacity: 0.2;
     }
         .btn2 {
             font-family: 'Noto Sans', sans-serif;
@@ -123,6 +123,7 @@ function Play() {
             z-index: 7;
             padding: 50px;
             left:35%;
+            top: 80%;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -201,7 +202,7 @@ function Play() {
          }
          .action1 {
              position: absolute;
-             top: 30%;
+             top: 50%;
              left: 25%;
              transform: translate(-50%, -50%);
              z-index: 3;
