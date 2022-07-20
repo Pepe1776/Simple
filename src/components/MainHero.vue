@@ -1,16 +1,14 @@
 <template>
     <div>
         <Transition name="fade" appear>
-            <video autoplay v-if="action6" src="../assets/mapvid.mp4" class="vid pulse2" />
+            <video autoplay loop v-if="action6" src="../assets/mapvid.mp4" class="vid pulse2" />
         </Transition>
         <Transition name="fade" appear>
             <video autoplay v-if="action7" src="../assets/codevid.mp4" class="vid2" />
         </Transition>
         <div class="black"></div>
         <div class="black0"></div>
-        <Transition name="fade" appear>
-            <img class="float" src="../assets/Apple_Watch_R Shadowless.png" alt="hero" />
-        </Transition> 
+       
             <button v-if="action2" class="btn2" @click="Play(), action2 = !action2">Jump into the future!</button>
         <Transition name="fade" appear>
             <p id="action1" class="action1 pulse" v-if="action1">Simulation is rendering .....</p>
