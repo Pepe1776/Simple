@@ -30,9 +30,13 @@
         <Transition name="fade" appear>
             <p id="action1" class="action2" v-if="action9">Bring in new customers <br> while building your brand </p>
         </Transition>
+        <Transition name="fade" appear>
+            <p id="action1" class="action2" v-if="action10">J_Parker Development </p>
+        </Transition>
         <router-link to="/">
             <img src="../assets/Satoshi-logo-bw.png" alt="Satoshi logo" class="logo" />
         </router-link>
+        <div class="parker">J_Parker Development</div>
         <router-link id="call" class="call">
             Hire Me
         </router-link>
@@ -213,6 +217,17 @@ function Play() {
         left: 3%;
         z-index: 5;
         opacity: 0.6;
+        cursor: crosshair;
+    }
+    .parker {
+        position: fixed;
+        top: 8%;
+        left: 13%;
+        z-index: 5;
+        opacity: 0.6;
+        font-size: 4rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(0, 204, 255, 0.607);
         cursor: crosshair;
     }
     .logo:hover {
