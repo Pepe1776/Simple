@@ -1,25 +1,34 @@
 <template>
     <div>
         <Transition name="fade" appear>
-            <img v-if="action6" class="pulse2" src="../assets/hero.jpeg" alt="hero" />
+            <video autoplay v-if="action6" src="../assets/mapvid.mp4" class="vid pulse2" />
+        </Transition>
+        <Transition name="fade" appear>
+            <video autoplay v-if="action7" src="../assets/codevid.mp4" class="vid2" />
         </Transition>
         <div class="black"></div>
         <div class="black0"></div>
         <Transition name="fade" appear>
-            <img class="float" src="../assets/121212.png" alt="hero" />
+            <img class="float" src="../assets/Apple_Watch_R Shadowless.png" alt="hero" />
         </Transition> 
             <button v-if="action2" class="btn2" @click="Play(), action2 = !action2">Jump into the future!</button>
         <Transition name="fade" appear>
             <p id="action1" class="action1 pulse" v-if="action1">Simulation is rendering .....</p>
         </Transition>
         <Transition name="fade" appear>
-            <p id="action1" class="action2" v-if="action3">Welcome to the Future <br> of we do business online</p>
+            <p id="action1" class="action2" v-if="action3">Welcome to the Future <br> of how we do business online</p>
         </Transition>
         <Transition name="fade" appear>
-            <img class="img-action" v-if="action5" src="../assets/web3_primer_1.gif" alt="web3_primer_1">
+            
         </Transition>
         <Transition name="fade" appear>
-            <p id="action1" class="action2" v-if="action4">We are a team of experts in the field of digitalization</p>
+            <p id="action1" class="action2" v-if="action4">We are experts in <br> the field of digitalization</p>
+        </Transition>
+        <Transition name="fade" appear>
+            <p id="action1" class="action2" v-if="action8">Let us build you a <br> custom tailored website </p>
+        </Transition>
+        <Transition name="fade" appear>
+            <p id="action1" class="action2" v-if="action9">Bring in new customers <br> while building your brand </p>
         </Transition>
         <router-link to="/">
             <img src="../assets/Satoshi-logo-bw.png" alt="Satoshi logo" class="logo" />
@@ -39,13 +48,20 @@ const action3 = ref(false);
 const action4 = ref(false);
 const action5 = ref(false);
 const action6 = ref(true);
+const action7 = ref(false);
+const action8 = ref(false);
+const action9 = ref(false);
+const action10 = ref(false);
 function Play() {
     setTimeout(() => {
         action1.value = true;
     }, 1000);
     setTimeout(() => {
         action6.value = false;
-    }, 500);
+    }, 11500);
+    setTimeout(() => {
+        action7.value = true;
+    }, 12500);
     setTimeout(() => {
         action1.value = false;
     }, 5000);
@@ -70,6 +86,24 @@ function Play() {
     setTimeout(() => {
         action4.value = false;
     }, 17000);
+    setTimeout(() => {
+        action8.value = true;
+    }, 17500);
+    setTimeout(() => {
+        action8.value = false;
+    }, 25000);
+    setTimeout(() => {
+        action9.value = true;
+    }, 25500);
+    setTimeout(() => {
+        action9.value = false;
+    }, 32000);
+    setTimeout(() => {
+        action10.value = true;
+    }, 32500);
+    setTimeout(() => {
+        action10.value = false;
+    }, 40000);
 }
 </script>
 <style scoped>
@@ -109,6 +143,27 @@ function Play() {
         z-index: 3;
         curser: none;
     }
+    .vid {
+            width: 100vw;
+                height: 100vh;
+                position: absolute;
+                inset: 0;
+                opacity: 0.5;
+                z-index: 3;
+                curser: none;
+                object-fit: fill;
+    }
+    .vid2 {
+            width: 100vw;
+                height: 100vh;
+                position: absolute;
+                inset: 0;
+                opacity: 0.5;
+                z-index: 3;
+                curser: none;
+                object-fit: fill;
+                filter: opacity(0.3);
+    }
     .img-action {
         opacity: 0.2;
     }
@@ -122,8 +177,8 @@ function Play() {
             cursor: crosshair;
             z-index: 7;
             padding: 50px;
-            left:27%;
-            top: 75%;
+            left:33%;
+            top: 77%;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -227,13 +282,13 @@ function Play() {
              height: 100%;
              line-height: normal;
              font-size: 7rem;
-             color: rgba(0, 204, 255, 0.607);
+             color: rgb(0, 204, 255);
              font-family: 'Noto Sans', sans-serif;
              font-weight: 900;
              justify-content: center;
              align-items: center;
              display: flex;
-             text-shadow: #000000 0px 0px 20px;
+             text-shadow: #000000 0px 0px 30px;
              transition: all 0.5s ease-in-out;
          }
         .pulse {
@@ -291,7 +346,7 @@ function Play() {
         }
                 @keyframes stretch {
                     0% {
-                        transform: scale(.6);
+                        transform: scale(1);
                         color: rgba(51, 255, 0, 0);;
                         border-radius: 100%;
                     }
@@ -301,7 +356,7 @@ function Play() {
                     }
         
                     100% {
-                        transform: scale(1);
+                        transform: scale(1.3);
                         color: rgba(0, 204, 255, 0.607);
                     }
                 }

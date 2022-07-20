@@ -45,7 +45,7 @@
         transition: all 0.5s ease-in-out;
         opacity: 1;
         transform: scale(1.1);
-        color: rgba(0, 204, 255, 0.607);
+        color: rgb(0, 204, 255);
         box-shadow: 0 0 10px rgba(0, 204, 255, 0.607);
     }
     router-link {
