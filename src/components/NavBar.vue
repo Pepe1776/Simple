@@ -32,7 +32,7 @@
         margin-right: 10rem;
         height: 100px;
         width: auto;
-        font-size: 3rem;
+        font-size: 250%;
         cursor: crosshair;
         z-index: 5;
         padding: 10px;
