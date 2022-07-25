@@ -187,10 +187,10 @@ function Play() {
             height: 100px;
             width: auto;
             font-size: 3rem;
-            cursor: crosshair;
-            z-index: 7;
+            cursor: pointer;
+            z-index: 19;
             padding: 50px;
-            left:33%;
+            left:40%;
             top: 77%;
             border-radius: 10px;
             display: flex;
@@ -199,6 +199,11 @@ function Play() {
             position: absolute;
             background: transparent;
             border: 1px solid rgba(0, 204, 255, 0.607);
+        }
+        .btn2:hover {
+            transition: all 0.5s ease-in-out;
+            opacity: 1;
+            transform: scale(1.1);
         }
     .black {
         background-color: #000000;
