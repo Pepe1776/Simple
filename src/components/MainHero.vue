@@ -223,7 +223,7 @@ function Play() {
         left: 13%;
         z-index: 5;
         opacity: 0.6;
-        font-size: 4rem;
+        font-size: 2rem;
     font-family: 'Noto Sans', sans-serif;
     color: rgba(0, 204, 255, 0.607);
         cursor: crosshair;

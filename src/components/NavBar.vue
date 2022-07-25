@@ -30,9 +30,9 @@
         color: rgba(0, 204, 255, 0.607);
         margin-top: 3%;
         margin-right: 10rem;
-        height: 100px;
+        height: 50px;
         width: auto;
-        font-size: 250%;
+        font-size: 2rem;
         cursor: crosshair;
         z-index: 5;
         padding: 10px;
