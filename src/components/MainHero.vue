@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <Transition name="fade" appear>
             <video autoplay loop v-if="action6" src="../assets/mapvid.mp4" class="vid pulse2" />
         </Transition>
@@ -135,6 +135,17 @@ function Play() {
     transform: translateX(20px);
     opacity: 0;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
 
     img {
         width: 100vw;
@@ -173,9 +184,9 @@ function Play() {
             font-family: 'Noto Sans', sans-serif;
             font-weight: 900;
             color: rgba(0, 204, 255, 0.607);
-            height: 200px;
+            height: 100px;
             width: auto;
-            font-size: 5rem;
+            font-size: 3rem;
             cursor: crosshair;
             z-index: 7;
             padding: 50px;

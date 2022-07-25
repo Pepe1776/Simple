@@ -19,7 +19,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
-        gap: 10rem;
+        gap: 5rem;
         background-color: #00000044;
        
         
