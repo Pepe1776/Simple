@@ -14,6 +14,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100;1,400;1,900&display=swap');
     .navbar {
         width: 100%;
+        height: 100%;
         position: absolute;
         inset: 0;
         display: flex;

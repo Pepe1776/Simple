@@ -9,7 +9,7 @@
         <div class="black"></div>
         <div class="black0"></div>
        
-            <button v-if="action2" class="btn2" @click="Play(), action2 = !action2">Jump into the future!</button>
+            <button v-if="action2" class="btn3" @click="Play(), action2 = !action2">Jump into the future!</button>
         <Transition name="fade" appear>
             <p id="action1" class="action1 pulse" v-if="action1">Simulation is rendering .....</p>
         </Transition>
@@ -180,7 +180,7 @@ function Play() {
     .img-action {
         opacity: 0.2;
     }
-        .btn2 {
+        .btn3 {
             font-family: 'Noto Sans', sans-serif;
             font-weight: 900;
             color: rgba(0, 204, 255, 0.607);
@@ -188,10 +188,10 @@ function Play() {
             width: auto;
             font-size: 3rem;
             cursor: pointer;
-            z-index: 19;
+            z-index: 99;
             padding: 50px;
             left:40%;
-            top: 77%;
+            top: 57%;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -200,7 +200,7 @@ function Play() {
             background: transparent;
             border: 1px solid rgba(0, 204, 255, 0.607);
         }
-        .btn2:hover {
+        .btn3:hover {
             transition: all 0.5s ease-in-out;
             opacity: 1;
             transform: scale(1.1);
@@ -228,7 +228,7 @@ function Play() {
         height: auto;
         position: fixed;
         top: 3%;
-        left: 3%;
+        left: 1%;
         z-index: 5;
         opacity: 0.6;
         cursor: crosshair;
